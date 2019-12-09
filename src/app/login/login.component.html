@@ -1,0 +1,86 @@
+<section class="about section bg-2 pb-330">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5">
+        <h3>{{ 'LOGIN' | translate }}</h3>
+
+<!--        <p>{{ 'PLEASE_FILL_OUT' | translate }}</p>-->
+
+        <form class="login-form" [formGroup]="loginForm" (ngSubmit)="onSubmit(loginForm.value)">
+          <div class="form-group field-loginform-email required has-success">
+            <label class="control-label">{{ 'YOUR_NAME' | translate }}</label>
+
+            <input
+              class="form-control main"
+              type="text"
+              aria-invalid="false"
+              aria-required="true"
+              [formControl]="loginForm.controls['email']"
+              [ngClass]="{ 'form-control-danger': !isValid('email') }">
+
+            <span class="username-help-block help-block help-block-error" *ngIf="!formErrors.email.valid">{{
+                formErrors.email.message
+              }}</span>
+
+          </div>
+          <div class="form-group field-loginform-password required has-success">
+            <label class="control-label">{{ 'PASSWORD' | translate }}</label>
+
+            <input
+              class="form-control main"
+              type="password"
+              aria-invalid="false"
+              aria-required="true"
+              [formControl]="loginForm.controls['password']"
+              [ngClass]="{ 'form-control-danger': !isValid('password') }">
+
+            <span class="password-help-block help-block help-block-error" *ngIf="!formErrors.password.valid">{{
+                formErrors.password.message
+              }}</span>
+
+          </div>
+          <div class="form-group field-loginform-rememberme">
+            <div class="checkbox">
+              <label>
+                <input
+                  class="form-control main"
+                  type="checkbox"
+                  value="1"
+                  [formControl]="loginForm.controls['rememberMe']"
+                  [ngClass]="{ 'form-control-danger': !isValid('rememberMe') }">
+                {{ 'REMEMBER_ME' | translate }}
+              </label>
+              <p class="help-block help-block-error"></p>
+
+            </div>
+          </div>
+          <!--  <div style="color:#999;margin:1em 0">
+                  If you forgot your password you can .
+              </div> -->
+
+          <div class="form-group">
+
+            <button
+              type="submit"
+              class="btn btn-primary"
+              [disabled]="!loginForm.valid || submitted == true">
+              {{ 'LOGIN' | translate }}
+              <app-spinner *ngIf="submitted"></app-spinner>
+            </button>
+
+          </div>
+        </form>
+      </div>
+      <div class="col-lg-1"></div>
+      <div class="col-lg-6">
+        <div class="centre-login-block">
+          <h5>
+            <a [routerLink]="'/user/request-password-reset'">
+              {{ 'FORGOT_PASSWORD' | translate }} ?</a>
+          </h5>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>

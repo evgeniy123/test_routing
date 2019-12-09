@@ -1,0 +1,601 @@
+<!--<?php echo $this->render("//partials/_nav_menu", ['menu' => $menu]) ?>-->
+
+<section class="banner bg-1" id="home">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 align-self-center">
+        <!-- Contents -->
+        <div class="content-block">
+          <h5 class="text_find">{{ 'TAKE_A_PHOTO' | translate }}</h5>
+
+          <!-- App Badge -->
+          <div class="app-badge">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <!--  <a href="#"><img class="img-fluid" src="images/app-badge/google-play.png" alt="google-play"></a>-->
+                <a href="https://play.google.com/store/apps/details?id=com.yauheni.shoes"><img
+                  class="img-fluid" width="250" src="/assets/images/svg/google_play_en.svg"
+                  alt="google-play"></a>
+              </li>
+              <li class="list-inline-item">
+                <a [routerLink]="['/not-available/apple-not-available']">
+                  <img class="img-fluid" width="250"
+                       src="/assets/images/svg/app_store_en_not_available.svg" alt="app-store"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <!-- App Image -->
+        <div class="image-block">
+          <img class="img-fluid" width="300" src="/assets/images/phones/phone_main_screen.png"
+               alt="phone-banner">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--====  End of Homepage Banner  ====-->
+
+<!--===========================
+=            About            =
+============================-->
+
+<section class="about section bg-2" id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 mr-auto">
+        <!-- Image Content -->
+        <div class="image-block screen-main my">
+          <img src="assets/images/screen_shot_chaussure.jpg" alt="iphone-feature" class="img-fluid b-lazy">
+        </div>
+      </div>
+      <div class="col-lg-7 col-md-11 m-md-auto align-self-center ml-auto block-explication">
+        <div class="about-block">
+          <div class="about-item">
+            <div class="first-line">
+              <div class="icon">
+                <img alt="For retail shops" class="b-lazy" width="50" src="/assets/images/svg/retail.svg">
+              </div>
+              <div class="content">
+                <h5 class="upper_text">Pizcool {{ 'FOR_RETAILERS' | translate }}</h5>
+                <p>{{ 'EXPLICATION_RETAIL' | translate }}</p>
+              </div>
+            </div>
+
+            <div class="second-line">
+              <div class="row mt-10">
+                <div class="col-lg-3 align-self-center text-center">
+                  <img alt="Upload project for test" class="b-lazy" width="30"
+                       src="/assets/images/svg/upload_retailer.svg">
+                  <div class="title-second-line">
+                    {{ 'UPLOAD' | translate }}
+                  </div>
+                  <div class="title-second-line-sub">
+                    {{ 'UPLOAD_DATA' | translate }}
+                  </div>
+                </div>
+
+                <div class="col-lg-5 align-self-center text-center">
+                  <img class="b-lazy" width="30" src="/assets/images/svg/processing_retailer.svg">
+                  <div class="title-second-line">
+                    {{ 'PROCESSING' | translate }}
+                  </div>
+                  <div class="title-second-line-sub">
+                    {{ 'PICTURE_PROCESS' | translate }}
+                  </div>
+                </div>
+
+                <div class="col-lg-4 align-self-center text-center">
+                  <img class="b-lazy" width="30" src="/assets/images/svg/integration_retailer.svg">
+                  <div class="title-second-line">
+                    {{ 'OUTPUT' | translate }}
+                  </div>
+                  <div class="title-second-line-sub">
+                    API integration
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- About 02 -->
+          <div class="about-item active">
+            <div class="first-line">
+              <div class="icon">
+                <img class="b-lazy" width="50" src="/assets/images/svg/customers.svg">
+              </div>
+              <div class="content">
+                <h5>Pizcool {{ 'FOR_CUSTOMERS' | translate }} </h5>
+                <p> {{ 'DESCRIPTION_CUSTOMERS' | translate }} </p>
+              </div>
+            </div>
+            <div class="second-line-black">
+              <div class="row mt-10">
+                <div class="col-lg-3 align-self-center text-center">
+                  <img class="b-lazy" width="30" src="/assets/images/svg/camera_photo_main.svg">
+                  <div class="title-second-line-black">
+                    {{ 'UPLOAD' | translate }}
+                  </div>
+                  <div class="title-second-line-sub-black">
+                    {{ 'TAKE_PHOTO' | translate }}
+                  </div>
+                </div>
+
+                <div class="col-lg-5 align-self-center text-center">
+                  <img class="b-lazy" width="30" src="/assets/images/svg/find_customer.svg">
+                  <div class="title-second-line-black">
+                    {{ 'PROCESSING' | translate }}
+
+                  </div>
+                  <div class="title-second-line-sub-black">
+
+                    {{ 'LOOKING_FOR_SHOES' | translate }}
+                  </div>
+                </div>
+
+                <div class="col-lg-4 align-self-center text-center">
+                  <img class="b-lazy" width="30" src="/assets/images/svg/shoes_customer.svg">
+                  <div class="title-second-line-black">
+                    {{ 'OUTPUT' | translate }}
+                  </div>
+                  <div class="title-second-line-sub-black">
+                    {{ 'BUY_IT' | translate }}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- About 03 -->
+          <div class="about-item">
+            <div class="first-line">
+              <div class="icon">
+                <img class="b-lazy" width="40" src="/assets/images/svg/flexible.svg">
+              </div>
+              <div class="content">
+                <h5> {{ 'FLEXIBILITY' | translate }}</h5>
+                <p> {{ 'OUR_PLATFORM' | translate }}</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section feature" id="feature">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <h2>{{ 'ABOUT_OUR_TECH' | translate }}</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row bg-elipse">
+      <div class="col-lg-4 align-self-center text-center text-lg-right">
+        <!-- Feature Item -->
+        <div class="feature-item">
+          <!-- Icon -->
+          <div class="icon">
+            <img class="img-fluid b-lazy" width="50" src="/assets/images/svg/real_time.svg">
+            <!--  <i class="tf-circle-compass"></i>  -->
+          </div>
+          <!-- Content -->
+          <div class="content">
+            <h5>{{ 'REAL_TIME_UPDATING' | translate }}</h5>
+            <p>{{ 'WE_SHOW_CURRENT' | translate }}</p>
+          </div>
+        </div>
+        <!-- Feature Item -->
+        <div class="feature-item">
+          <!-- Icon -->
+          <div class="icon">
+            <i class="tf-tools-2"></i>
+          </div>
+          <!-- Content -->
+          <div class="content">
+            <h5>{{ 'FEATURES' | translate }} </h5>
+            <p>{{ 'WE_CAN_ADAPT_PROJECT' | translate }} </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 text-center">
+        <!-- Feature Item -->
+        <div class="feature-item mb-0">
+          <!-- Icon -->
+          <div class="icon">
+            <img class="img-fluid b-lazy" alt="main screen photo detection chaussures choes" width="50"
+                 src="/assets/images/svg/brain.svg">
+          </div>
+          <!-- Content -->
+          <div class="content">
+            <h5>{{ 'AI' | translate }} </h5>
+            <p>{{ 'AI_EXPLAIN' | translate }} </p>
+          </div>
+        </div>
+        <div class="app-screen my screen">
+          <img class="img-fluid b-lazy" src="assets/images/main_screen_photo.jpg"
+               alt="main screen photo detection">
+        </div>
+        <!-- Feature Item -->
+        <div class="feature-item">
+          <!-- Icon -->
+          <div class="icon">
+            <img class="img-fluid b-lazy" width="50" src="/assets/images/svg/machine_learning.svg">
+          </div>
+          <!-- Content -->
+          <div class="content">
+            <h5>{{ 'MACHINE_LEARNING' | translate }} </h5>
+            <p>{{ 'DESCRIPTION_ALGORITHMS' | translate }} </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 text-center text-lg-left align-self-center">
+        <!-- Feature Item -->
+        <div class="feature-item">
+          <!-- Icon -->
+          <div class="icon">
+            <img class="img-fluid b-lazy" width="50" src="/assets/images/svg/big_data.svg">
+          </div>
+          <!-- Content -->
+          <div class="content">
+            <h5>{{ 'BIG_DATA' | translate }} </h5>
+            <p>{{ 'BIG_DATA_EXPLANATION' | translate }} </p>
+          </div>
+        </div>
+        <!-- Feature Item -->
+        <div class="feature-item">
+          <!-- Icon -->
+          <div class="icon">
+            <img class="img-fluid b-lazy" width="50" src="/assets/images/svg/recomendation_alg.svg">
+          </div>
+          <!-- Content -->
+          <div class="content">
+            <h5>Recommendation algorithm</h5>
+            <p>The algorithm that we have developed allows us to classify goods by category</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about section bg-2" id="solutions">
+  <div class="container">
+    <div class="col-12">
+      <div class="section-title">
+        <h2 [innerHTML]="'SOLUTIONS_WE_PROPOSE' | translate"></h2>
+      </div>
+    </div>
+    <div class="row block-explication-search">
+      <div class="col-lg-6">
+        <img alt="search shoes with other shoes on picture machine learning" src="assets/images/search_object.png">
+      </div>
+
+      <div class="col-lg-6 flex-class">
+        <div class="description-block">
+          <h3>{{ 'VISUAL_SEARCH' | translate }}</h3>
+          <p>{{ 'VISUAL_SEARCH_DESCRIPTION' | translate }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container padding-top-5">
+    <div class="row block-explication-search reverse">
+      <div class="col-lg-6">
+        <img alt="search similar shoes on picture" src="assets/images/similar_item_search.png">
+      </div>
+
+      <div class="col-lg-6 flex-class">
+        <div class="description-block">
+          <h3>{{ 'SIMILAR_ITEMS' | translate }} </h3>
+          <p>{{ 'WE_CAN_SHOW_SIMILAR' | translate }} </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+<section class="section feature img-centre">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <h2>{{ 'HOW_DOES_IT_WORK' | translate }} </h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-2 col-md-6 col-sm-12 align-self-center text-center text-lg-right">
+        <div class="feature-item">
+          <!-- Content -->
+          <div class="content">
+            <h5 class="line-move-down">{{ 'TAKE_PHOTO' | translate }} </h5>
+          </div>
+          <img class="b-lazy" width="210" src="assets/images/step_1.png">
+        </div>
+      </div>
+      <div class="col-lg-1 flex-class">
+        <img width="20" src="/assets/images/svg/arrow_step.svg">
+      </div>
+      <div class="col-lg-2 col-md-6 col-sm-12 align-self-center text-center text-lg-right">
+        <div class="feature-item">
+          <!-- Content -->
+          <div class="content">
+            <h5>{{ 'CHOOSE_ONE_OF_FAVORITE' | translate }} </h5>
+          </div>
+          <img class="b-lazy" width="210" src="assets/images/step_2.png">
+        </div>
+      </div>
+      <div class="col-lg-1 flex-class">
+        <img width="20" src="/assets/images/svg/arrow_step.svg">
+      </div>
+      <div class="col-lg-2 col-md-6 col-sm-12 align-self-center text-center text-lg-right">
+        <div class="feature-item">
+          <!-- Content -->
+          <div class="content">
+            <h5>{{ 'ANALYSIS_SELECTED_SHOES' | translate }} </h5>
+          </div>
+          <img class="b-lazy" width="210" src="assets/images/step_3.png">
+        </div>
+      </div>
+      <div class="col-lg-1 flex-class">
+        <img width="20" src="/assets/images/svg/arrow_step.svg">
+      </div>
+      <div class="col-lg-2 col-md-6 col-sm-12 align-self-center text-center text-lg-right">
+        <div class="feature-item">
+          <!-- Content -->
+          <div class="content">
+            <h5>{{ 'GET_SIMILAR_CATALOG_ITEMS' | translate }} </h5>
+          </div>
+          <img class="b-lazy" width="210" src="assets/images/step_4.png">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section promo-video bg-3 overlay">
+  <div class="container">
+    <div class="row">
+
+    </div>
+  </div>
+</section>
+
+<!--====  End of Promo Video  ====-->
+
+<!--=============================================
+=            Call to Action Download            =
+==============================================-->
+
+<section class="cta-download bg-3 overlay">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5">
+        <div class="image-block"><img class="img-fluid b-lazy" src="/assets/images/phones/phone_main_screen.png"
+                                      alt="">
+        </div>
+      </div>
+      <div class="col-lg-7">
+        <div class="content-block">
+          <!-- Title -->
+          <h2>{{ 'FREE_DOWN_LOAD' | translate }} </h2>
+          <div class="app-badge">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="https://play.google.com/store/apps/details?id=com.yauheni.shoes">
+                  <img class="img-fluid b-lazy" width="250" src="assets/images/svg/google_play_en.svg"
+                       alt="Machine learning application"/></a>
+              </li>
+              <li class="list-inline-item">
+                <!--   <a href="#"><img class="img-fluid" src="images/app-badge/app-store.png" alt="app-store"></a>  -->
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--====  End of Call to Action Download  ====-->
+
+<!--=============================
+=            Counter            =
+==============================-->
+
+<section class="section counter bg-gray">
+  <div class="container">
+  </div>
+</section>
+
+<!--====  End of Counter  ====-->
+
+<section class="section feature" id="try">
+  <div class="container">
+    <!--<?php if (!Yii::$app->user->isGuest): ?>-->
+    <div class="row" *ngIf="onLine; else formTrial">
+      <div class="col-12">
+        <h5>Upload and get result</h5>
+        <div class="frame">
+          <div class="center">
+            <div class="bar"></div>
+            <div class="title">{{ 'DROP_FOR_UPLOAD' | translate }}</div>
+            <div class="dropzone">
+              <div class="content">
+                <img src="/assets/images/svg/upload.svg b-lazy" class="upload">
+                <span class="filename"></span>
+
+                <?php echo Html::beginForm() ?>
+
+
+                <?php echo Html::activeInput('file', $upload_form, 'image', ['class' => 'input']) ?>
+                <!--  <input type="file" class="input"> -->
+                <?php echo Html::endForm() ?>
+              </div>
+            </div>
+            <img src="/assets/images/svg/syncing.svg" class="syncing b-lazy">
+            <img src="/assets/images/svg/checkmark.svg" class="done b-lazy">
+            <div class="upload-btn">{{ 'UPLOAD_FILE' | translate }}</div>
+          </div>
+        </div>
+      </div>
+      <div id="result_my"></div>
+    </div>
+
+    <ng-template #formTrial>
+      <form class="login-form" [formGroup]="askTrialForm" (ngSubmit)="onSubmitAskTrial(askTrialForm.value)">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="title_free" [innerHTML]="'GET_TRIAL' | translate"></div>
+            <div class="description_free">{{ 'GET_TRIAL_DESCRIPTION' | translate }}</div>
+          </div>
+          <div class="col-lg-4 col-sm-12">
+            <div class="content contact_us_group">
+
+              <div class="form-group field-trytrialform-name required">
+
+                <input type="text" id="trytrialform-name" class="form-control main"
+                       name="TryTrialForm[name]"
+                       placeholder="{{ 'YOUR_NAME' | translate }} " aria-required="true">
+
+                <p class="help-block help-block-error"></p>
+              </div>
+              <div class="form-group field-trytrialform-email required">
+
+                <input type="text" id="trytrialform-email" class="form-control main"
+                       name="TryTrialForm[email]"
+                       placeholder="Email" aria-required="true">
+
+                <p class="help-block help-block-error"></p>
+              </div>
+              <div class="form-group field-trytrialform-company_name required">
+
+                <input type="text" id="trytrialform-company_name" class="form-control main"
+                       name="TryTrialForm[company_name]" placeholder="{{ 'COMPANY_NAME' | translate }} "
+                       aria-required="true">
+
+                <p class="help-block help-block-error"></p>
+              </div>
+              <div class="form-group field-trytrialform-phone required">
+
+                <input type="text" id="trytrialform-phone" class="form-control main"
+                       name="TryTrialForm[phone]"
+                       placeholder="{{ 'PHONE_NUMBER' | translate }}" aria-required="true">
+
+                <p class="help-block help-block-error"></p>
+              </div>
+              <button type="submit" class="input-group-addon tf-ion-android-send submit_btn_contact"></button>
+              <div class="form-group field-trytrialform-recaptcha">
+                <!--<re-captcha-->
+                <!--#captchaRef="reCaptcha"-->
+                <!--siteKey="YOUR_SITE_KEY"-->
+                <!--size="invisible"-->
+                <!--(resolved)="$event && submitAskTrial($event)"-->
+                <!--&gt;</re-captcha>-->
+
+                <!--<input type="hidden" id="trytrialform-recaptcha" name="TryTrialForm[reCaptcha]"-->
+                <!--value="03AOLTBLRIigW9oPs3-EhTSMRb1NFai5zVYxGNcfUE0Rdk85wCSF9q-4kR6s5qmVovvK3ojQpf6KEw6_cKphi2foy8D2F8-Y8gLGz9TMqnsaZGQX-rY7Uv3YFk_uAm2cn4HFGHJqp26ngq326U7XpAyCYQKp4PWpMBae71cdZi8g2cgHRKaqJu6I1iCzEghpxL4ju1M4APfhHRfKcdTih31H5-FTgwn1JezYLM4c-w76jCNu6TUgUa8H7RbTlCQToHeaHPqA6NLcdJ4ImwG20h0799OdtVGF_aEWi87QLIPrn1eAuqd4d4NRLJ53dK_JCvrFzzs9LHTaI2RGdAYMXFTXvzW-utCUjQSeHUr4LUHziqj6zz8fFAin3f9K4dr-tv6XYEQDQ_pSiTnKixjDbHk9gpaOMF7Sr1w4PyAuTk2g0DDk0zLe3l_QaOz5neRDZlITYRqms9HHY0ghF7TpMm4xxs7c8vSOpTXdznX7qS6HmEhtKLV7O0Nn00m7e4rPmSYaKvH6JEKdQvTRasrcQIkxannmbGU7j_FhHA0EM1QgtVBH6VO0b_fok">-->
+                <p class="help-block help-block-error" *ngIf="errorMessageAskTrial; else showErrorAskTrial">
+                  {{ errorMessageAskTrial }}</p>
+
+                <ng-template #showErrorAskTrial>
+
+                </ng-template>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </ng-template>
+
+  </div>
+</section>
+
+
+<section class="cta-subscribe" id="contact">
+  <div class="container">
+    <form class="subscribe-form" [formGroup]="askTrialForm" (ngSubmit)="onSubscribe(subscribeForm.value)">
+      <div class="row">
+
+        <div class="col-lg-3">
+          <p class="p_black_class"> {{ 'SUBSCRIBE_OUR_NEWS' | translate }}</p>
+        </div>
+        <div class="col-lg-3">
+          <div class="input-group">
+
+            <input
+              class="form-control main lettres"
+              type="text"
+              placeholder="{{ 'ENTER_YOUR_EMAIL'|  translate}}"
+              [formControl]="subscribeForm.controls['subscribe']">
+
+          </div>
+        </div>
+        <div class="col-lg-1">
+          <button type="submit" id="btnGroupAddon"
+                  class="input-group-addon tf-ion-android-send submit_btn_contact"></button>
+        </div>
+      </div>
+
+    </form>
+  </div>
+</section>
+
+
+<footer class="footer-main">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 mr-auto">
+        <div class="footer-logo">
+          <img height="45" src="assets/images/svg/logo.svg" alt="footer-logo">
+
+        </div>
+        <div class="copyright">
+          <p>@ {{ date | date: "yyyy"}} {{ 'ALL_RIGHTS' | translate }} | Design By : <a
+            href="https://pizcool.com/">Pizcool</a>
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-6 text-lg-right">
+        <!-- Social Icons -->
+        <ul class="social-icons list-inline">
+          <li class="list-inline-item">
+            <a href="https://www.facebook.com/Pizcool-1645131999119407/"><i
+              class="tf-ion-social-facebook"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a href=""><i class="tf-ion-social-twitter"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.linkedin.com/in/yauheni-tarasevich-9084b018/"><i
+              class="tf-ion-social-linkedin"></i></a>
+          </li>
+        </ul>
+        <!-- Footer Links -->
+        <ul class="footer-links list-inline">
+          <li class="list-inline-item">
+            <a href="#about">{{ 'ABOUT' | translate }} </a>
+          </li>
+          <li class="list-inline-item">
+            <a href='#try'>{{ 'TRY' | translate }}</a>
+          </li>
+          <li class="list-inline-item">
+            <a href='#contact'>{{ 'CONTACT' | translate }} </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!--<?php echo $this->render("//partials/_footer", ['menu' => $menu]) ?>-->

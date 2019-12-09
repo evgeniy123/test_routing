@@ -1,0 +1,69 @@
+<nav class="navbar main-nav fixed-top navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand text_logo"
+       [routerLink]="''">Pizcool
+      <img height="40" src="assets/images/svg/logo.svg" alt="Detection shoes machine learning"></a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="tf-ion-android-menu"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+
+
+        <li class="menu__social full">
+          <a id="lang_fr" appStyleLanguage="fr" (click)="changeLocale('fr')" class="langage"></a>
+        </li>
+        <li class="menu__social full">
+          <a id="lang_en" appStyleLanguage="en" (click)="changeLocale('en')" class="langage"></a>
+        </li>
+
+
+        <li class="nav-item">
+          <a class="nav-link scrollTo" href="#home">{{'HOME' |translate}} </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scrollTo" href="#about">{{'ABOUT' |translate}}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scrollTo" href="#solutions">Solutions</a>
+        </li>
+        <li class="nav-item"><a class="nav-link scrollTo" href="#feature">{{'FEATURES' | translate}} </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scrollTo"
+             [routerLink]="['/']" fragment="contact">{{'CONTACT' | translate}} </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scrollTo" [routerLink]="['/']" fragment="try">{{'TRY' | translate}}</a>
+        </li>
+
+        <li class="nav-item" *ngIf="!onLine; else blockUserName">
+          <a class="nav-link scrollTo connect_highlighted" [routerLink]="'/user/login'">
+            {{'LOGIN' | translate}}
+          </a>
+        </li>
+
+        <ng-template #blockUserName>
+          <li class="nav-item">
+            <a class="nav-link scrollTo connect_highlighted" [routerLink]="'bo'">
+              {{userName}}    {{userSurName}}
+            </a>
+          </li>
+          <li class="nav-item">
+            <a [routerLink]="['/logout']">
+              <button class="submit_btn_logout">{{'LOGOUT' | translate}}</button>
+            </a>
+          </li>
+        </ng-template>
+      </ul>
+    </div>
+  </div>
+
+</nav>
+
+<router-outlet></router-outlet>
+
+
+
